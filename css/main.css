@@ -1,0 +1,59 @@
+a.hover-button:hover {
+    background-color: grey;
+    color: #5bc3f7;
+}
+
+.waves-effect.waves-dark .waves-ripple {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.grey {
+    transition: 0.3s;
+}
+
+.glow-blue {
+    color: #bde1ec;
+    animation: glow-blue 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow-blue {
+    from {
+        text-shadow: 0 0 10px #2196F3, 0 0 20px #2196F3, 0 0 30px #ADE5FC, 0 0 40px #ADE5FC, 0 0 50px #ADE5FC;
+    }
+    to {
+        text-shadow: 0 0 20px #2196F3, 0 0 30px #2196F3, 0 0 40px #ADE5FC, 0 0 50px #ADE5FC, 0 0 60px #ADE5FC;
+    }
+}
+
+.linear-grey {
+    transition: 0.3s;
+    background: linear-gradient(0deg, #303030, #707070);
+}
+
+.transparent {
+    transition: 0.3s;
+}
+
+.width-anim {
+    width: 0%;
+    animation: change-width 9.4s;
+}
+
+@keyframes change-width {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

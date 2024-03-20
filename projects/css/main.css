@@ -1,0 +1,11 @@
+.custom-bullet {
+    list-style-type: none;
+    margin-left: 30px;
+    padding-left: 0; /* Reset default padding */
+  }
+
+  .custom-bullet li:before {
+    content: "•"; /* You can use any other character or even an image */
+    color: black; /* Customize the color */
+    margin-right: 10px;
+  }

@@ -1,0 +1,13 @@
+.slider{
+  background-color: grey;
+};
+.custom-bullet {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.custom-bullet:before {
+  content: "•"; /* You can use any other character or even an image */
+  color: #f44336; /* Customize the color */
+  margin-right: 10px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roly's Portfolio</title>
+</head>
+
+<body class="grey darken-4  ">
+    <br><br><br>
+    <div class="row">
+        <div class="col s12 m10 l8 offset-m1 offset-l2">
+            <div class="card grey lighten-3 z-depth-4">
+                <div class="card-content ">
+                        <div class="container">
+
+                            <br><br><br>
+                            <p>Name: Roly Gatus</p>
+                            <p>Age: 22</p>
+                            <p>BirthDate: November 27,2000</p>
+                            <p>Address: 140 Sitio Militar Bahay Toro Quezon City</p>
+
+                            <h4>Skills: </h4>
+                                <ul class="custom-bullet">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>C#</li>
+                                    <li>C++</li>
+                                    <li>C</li>
+                                    <li>Typewriter</li>
+                                    <li>Ms Office</li>
+                                    <li>Unity</li>
+                                    <li>Game Developer</li>
+                                    <li>Game Programmer</li>
+                                    <li>2D Animator</li>
+                                </ul>
+
+                                <h4>Work Experience</h4>
+                                <ul class="custom-bullet">
+                                    <li>
+                                        <strong>Web Developer</strong>
+                                        <p>XYZ Tech Solutions, Anytown, USA</p>
+                                        <p>Developed responsive websites using HTML, CSS, and JavaScript. Collaborated with cross-functional teams to implement new features and optimize existing code.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Frontend Engineer</strong>
+                                        <p>ABC Digital Agency, Cityville, USA</p>
+                                        <p>Designed and implemented user interfaces for various clients. Ensured consistent and visually appealing designs across different platforms.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>UI/UX Designer</strong>
+                                        <p>Creative Designs Inc., Metropolis, USA</p>
+                                        <p>Created wireframes and prototypes, collaborated with clients to understand their design requirements, and translated concepts into interactive user interfaces.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Software Engineer Intern</strong>
+                                        <p>Tech Innovators Ltd., Silicon Valley, USA</p>
+                                        <p>Worked on debugging and optimizing existing codebase. Collaborated with senior engineers on feature development and testing.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Junior Web Designer</strong>
+                                        <p>Digital Solutions Co., Cyber City, USA</p>
+                                        <p>Assisted in the design and development of websites. Implemented responsive designs and collaborated with the marketing team on promotional campaigns.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>E-commerce Developer</strong>
+                                        <p>Online Retailers LLC, E-marketplace, USA</p>
+                                        <p>Developed and maintained the e-commerce platform, implemented new features, and optimized website performance to enhance user experience.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Freelance Web Developer</strong>
+                                        <p>Self-Employed, Remote</p>
+                                        <p>Collaborated with various clients to develop custom websites. Implemented responsive designs and provided ongoing maintenance and support.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Technical Support Specialist</strong>
+                                        <p>Customer Tech Solutions, Helpdesk City, USA</p>
+                                        <p>Provided technical assistance to customers, resolved issues related to software and hardware, and documented solutions for knowledge base.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>Content Management Intern</strong>
+                                        <p>Media Hub Co., Pressland, USA</p>
+                                        <p>Assisted in managing and updating website content. Collaborated with content creators and editors to ensure a seamless publishing process.</p>
+                                    </li>
+                                
+                                    <li>
+                                        <strong>IT Support Technician</strong>
+                                        <p>Corporate IT Services, Business District, USA</p>
+                                        <p>Provided technical support to internal employees, troubleshooted hardware and software issues, and maintained IT infrastructure.</p>
+                                    </li>
+                                </ul>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script src="style.js "></script>
+    <script src="style2.js"></script>
+
+
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 2) {
+                $('nav').addClass('linear-grey').removeClass('transparent');
+            } else {
+                $('nav').addClass('transparent').removeClass('linear-grey');
+            }
+        })
+        $('.fadein').hide();
+        setTimeout(() => {
+
+            $(document).ready(function() {
+                $('.fadein').fadeIn();
+                $('.fadeout').fadeOut();
+                $('.parallax').parallax({
+                    fullWidth: true
+                });
+                // Init Sidenav
+                $('.count').each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 5000,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                $('select').material_select();
+
+
+                $('.button-collapse').sideNav();
+                $('.dropdown-button').dropdown({
+                    constrainWidth: false,
+                    hover: true,
+                    belowOrigin: true,
+                    alignment: 'left'
+                });
+                $('.scrollspy').scrollSpy();
+            });
+            $('.slider').slider({
+                indicators: true,
+                height: 400,
+                transition: 2000,
+                interval: 3000
+            });
+        }, 10000);
+    </script>
+</body>
+
+</html>
